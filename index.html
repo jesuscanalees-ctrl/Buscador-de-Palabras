@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Palabras</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h1><i class="fa-solid fa-magnifying-glass"></i> Buscador de Palabras</h1>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="texto" class="form-label"><i class="fa-solid fa-file-lines"></i> Escribe el texto</label>
+                            <textarea id="texto" class="form-control" rows="6" placeholder="Escribe o pega tu texto aquí..."></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="palabra" class="form-label"><i class="fa-solid fa-search"></i> Palabra que deseas buscar</label>
+                            <input type="text" id="palabra" class="form-control" placeholder="Escribe una palabra">
+                        </div>
+                        <div class="d-flex gap-2 flex-wrap">
+                            <button type="button" id="btn_buscar" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Buscar</button>
+                            <button type="button" id="btn_limpiar" class="btn btn-danger"><i class="fa-solid fa-trash"></i> Limpiar</button>
+                        </div>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h5><i class="fa-solid fa-chart-bar"></i> Resultado de la búsqueda</h5>
+                            <p id="contador" class="mb-0">Aqui aparecera el numero de coincidencias.</p>
+                        </div>
+                        <div class="resultado">
+                            <h5><i class="fa-solid fa-file-circle-check"></i> Texto procesado</h5>
+                            <div id="resultado" class="texto-procesado">
+                                Aqui aparecera el texto con las palabras resaltadas.
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="./bundle.js"></script>
+</body>
+</html>
